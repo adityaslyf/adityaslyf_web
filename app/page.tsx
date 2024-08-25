@@ -1,5 +1,5 @@
 "use client";
-import {SparklesCore} from './Background/background';
+import { SparklesCore } from './Background/background';
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
@@ -7,7 +7,7 @@ import { NavbarDemo } from '@/components/NavbarDemo';
 
 export default function Home() {
   return (
-    <main className="text-white w-full min-h-screen  bg-gradient-to-b from-orange-900 to-black overflow-hidden">
+    <main className="text-white w-full min-h-screen  h-[200vh] bg-gradient-to-b from-orange-900 to-black overflow-hidden">
       <div className="w-full h-full fixed">
         <SparklesCore
           id="tsparticles"
@@ -18,7 +18,7 @@ export default function Home() {
           className="w-full h-full"
           particleColor="#FFFFFF"
         />
-<NavbarDemo/>
+        <NavbarDemo />
       </div>
     </main>
   );
