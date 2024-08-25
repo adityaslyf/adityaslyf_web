@@ -1,5 +1,10 @@
-import Image from "next/image";
+"use client";
 import {SparklesCore} from './Background/background';
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
+import { cn } from "@/lib/utils";
+import { NavbarDemo } from '@/components/NavbarDemo';
+
 export default function Home() {
   return (
     <main className="text-white w-full min-h-screen  bg-gradient-to-b from-orange-900 to-black overflow-hidden">
@@ -13,7 +18,9 @@ export default function Home() {
           className="w-full h-full"
           particleColor="#FFFFFF"
         />
+<NavbarDemo/>
       </div>
     </main>
   );
 }
+
